@@ -1,4 +1,4 @@
-##################
+	##################
 #   Parameters   #
 ##################
 
@@ -60,10 +60,8 @@ test:
 
 
 src_path = src/main/scala
-submodules = . midas firrtl \
-	$(addprefix target-rtl/firechip/, testchipip icenet sifive-blocks \
-	$(addprefix rocket-chip/, . hardfloat chisel3 chisel3/chiselFrontend))
-chisel_srcs = $(foreach submodule,$(submodules),$(shell find $(base_dir)/$(submodule)/$(src_path) -name "*.scala"))
+submodules = . midas firrtl target-rtl/firechip
+chisel_srcs = $(foreach submodule,$(submodules),$(shell find $(base_dir)/$(submodule) -name "*.scala"))
 
 ########################
 # Timestamp & Patching #
