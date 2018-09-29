@@ -1,0 +1,19 @@
+{
+  "benchmark_name" : "pfa",
+  "common_rootfs"     : "firesim.img",
+  "common_simulation_outputs" : ["uartlog"],
+   "workloads" : [
+   {
+     "name" : "linux",
+     "bootbinary" : "bbl",
+     "simulation_outputs" : [],
+     "outputs" : ["/root/pfa-exp/results/results_pfa"]
+   },
+   {
+     "name" : "memblade",
+     "bootbinary" : "memblade-dummy.riscv",
+     "simulation_outputs" : [],
+     "outputs" : []
+   }
+  ]
+}
