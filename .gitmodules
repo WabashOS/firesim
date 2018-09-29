@@ -31,3 +31,6 @@
 [submodule "sw/memblade-tests"]
 	path = sw/memblade-tests
 	url = git@bitbucket.org:zhemao/memblade-tests.git
+[submodule "sw/pfa-fedora"]
+	path = sw/pfa-fedora
+	url = git@github.com:WabashOS/pfa-fedora.git
